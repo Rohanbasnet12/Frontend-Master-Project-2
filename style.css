@@ -1,0 +1,142 @@
+/* LINKS */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS VARIABLES */
+:root {
+    /* COLORS */
+    --WHITE-COLOR: hsl(0, 0%, 100%);
+    --LIGHTPINK-COLOR: hsl(275, 100%, 97%);
+    --GRAYPURPLE-COLOR: hsl(292, 16%, 49%);
+    --DARKPURPLE-COLOR: hsl(292, 42%, 14%);
+    --LIGHTPURPLE-COLOR: rgb(255, 3, 255);
+
+    /* FONT SIZE*/
+    --PARA-FSIZE: 16px;
+
+    /* FONT FAMILY */
+    --PRIMARY-FONT: 'Work Sans', sans-serif;
+
+    /* FONT WEIGHT */
+    --LIGHT-WEIGHT: 400;
+    --REGULART-WEIGHT: 600;
+    --BOLD-WEIGHT: 700;
+}
+
+/* UTILITIES */
+.answer {
+    padding-top: 1em;
+    font-size: var(--PARA-FSIZE);
+    color: #00000080;
+    display: none;
+}
+
+.border {
+    padding: 0 0 12px 0;
+    border-bottom: 1px solid #00000020;
+    margin: 2rem 0;
+}
+
+.buttonClicked {
+    background: var(--DARKPURPLE-COLOR) !important;
+}
+
+/* GENERAL STYLES */
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/* STYLING MAIN SECTION */
+#main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--LIGHTPINK-COLOR);
+}
+
+.container {
+    position: relative;
+}
+
+/* STYLING BOX SECTION */
+.box {
+    padding: 2rem;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    width: 630px;
+    height: 450px;
+    border-radius: 18px;
+    background: var(--WHITE-COLOR);
+    box-shadow: 2px 2px 18px 3px rgba(255, 182, 193, 0.233);
+}
+
+/* STYLING TOP SECTION */
+.top {
+    font-family: var(--PRIMARY-FONT);
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.top svg {
+    transform: scale(.8);
+}
+
+/* STLYLING INFO SECTION */
+.info {
+    font-family: var(--PRIMARY-FONT);
+    padding-top: 1rem;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li p {
+    font-size: var(--PARA-FSIZE);
+    color: #000000;
+    font-weight: var(--BOLD-WEIGHT);
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--LIGHTPURPLE-COLOR);
+    outline: none;
+    border: none;
+    color: var(--WHITE-COLOR);
+    cursor: pointer;
+}
+
+#hideBtn {
+    display: none;
+}
+
+/* FOOTER SECTION */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 40%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
