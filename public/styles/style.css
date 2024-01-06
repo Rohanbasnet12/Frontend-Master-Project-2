@@ -95,6 +95,7 @@ body {
     background: var(--WHITE-COLOR);
     box-shadow: 2px 2px 12px 3px #93939340;
     padding: 2rem;
+    overflow-x: scroll;
 }
 
 .main-head {
